@@ -19,7 +19,7 @@ sigma_m_acqua = np.full(m_acqua.shape, np.sqrt(rbilancia**2 + rbilancia**2))
 
 ################
 tara_olio = 350
-h_olio = np.array([4.5, 5.4, 6.4, 7.2, 8.9 ])                          # Altezza dell' olio [h]
+h_olio = np.array([4.5, 5.4, 6.4, 7.2, 8.9 ])                          # Altezza dell' olio [cm]
 sigma_h_olio = np.full(h_olio.shape, rriga)
 
 m_oliotara = np.array([352., 390., 436., 496., 554. ])
