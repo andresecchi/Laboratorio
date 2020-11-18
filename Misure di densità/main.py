@@ -38,10 +38,10 @@ plt.plot(x, line(x, mhat_olio, qhat_olio), color = "red", label = 'Olio')
 
 
 D_acqua = 1/(np.pi * (me.d/2)**2 * mhat_acqua)
-sigma_D_acqua = sigma_mhat_acqua/ mhat_acqua + 2*(me.rriga /2 / (me.d/2) )
+sigma_D_acqua = D_acqua* np.sqrt(sigma_mhat_acqua**2/ mhat_acqua + 2*(me.rriga/2)**2 / (me.d/2))
 
 D_olio = 1/(np.pi * (me.d/2)**2 * mhat_olio)
-sigma_D_olio = sigma_mhat_olio/ mhat_olio + 2*(me.rriga /2 / (me.d/2) )
+sigma_D_olio = D_olio* np.sqrt(sigma_mhat_olio**2/ mhat_olio + 2*(me.rriga/2)**2 / (me.d/2))
 
 print(f'Densità acqua = {D_acqua} +/- {sigma_D_acqua}')
 print(f'Densità olio = {D_olio} +/- {sigma_D_olio}')
