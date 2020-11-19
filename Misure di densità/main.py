@@ -45,7 +45,10 @@ sigma_D_olio = D_olio* np.sqrt(sigma_mhat_olio**2/ mhat_olio + 2*(me.rriga/2)**2
 
 print(f'Densità acqua = {D_acqua} +/- {sigma_D_acqua}')
 print(f'Densità olio = {D_olio} +/- {sigma_D_olio}')
-
+print(mhat_acqua, sigma_mhat_acqua)
+print(mhat_olio, sigma_mhat_olio)
+print(qhat_acqua, sigma_qhat_acqua)
+print(qhat_olio, sigma_qhat_olio)
 
 
 
